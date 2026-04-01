@@ -1,0 +1,388 @@
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+}
+.material-symbols-outlined.filled {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24
+}
+.glass-card {
+    background: rgba(14, 14, 19, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px)
+}
+.neon-glow-primary {
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.2)
+}
+.neon-glow-secondary {
+    box-shadow: 0 0 20px rgba(0, 244, 254, 0.2)
+}
+.hero-gradient {
+    background: radial-gradient(circle at 50% 50%, rgba(156, 66, 244, 0.15) 0%, transparent 70%)
+}
+.roadmap-line {
+    background: linear-gradient(180deg, #00f4fe 0%, #ca98ff 50%, #00f4fe 100%)
+}
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-image: url(https://lh3.googleusercontent.com/aida/ADBb0ujmUxvl-cxRAgXJx3semVhhB9dK8KtvPC8vjp0BxBNpkOdRRT6Ym8GvpCWnYJvMUAd764zNOD8P4Pu-oZ0pijolGvQWe5vlzu8ceSNshRc58nMtcgMzvaoFitKQZDJHB4k2UmddnNn5c4RUUPLi8upVVGyCzm-2KQiA9p2G8wPnGahWkF66NBu-e-Dot3HFuex4s6mxmVeD64SDqrPA7_lq3U2EW78NsONVgzpVUa1wDMwqWuM1itVxedZTvNluovuc3loY49ym);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+    background: rgba(0, 0, 0, 0.5)
+}
+section {
+    position: relative;
+    z-index: 1
+}
+
+/* Shadows */
+.shadow-nav {
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.15)
+}
+.shadow-hero-title {
+    filter: drop-shadow(0 0 10px rgba(0, 244, 254, 0.4))
+}
+.shadow-step-icon {
+    box-shadow: 0 0 15px rgba(0, 244, 254, 0.2)
+}
+.shadow-step-icon-hover:hover {
+    box-shadow: 0 0 25px rgba(0, 244, 254, 0.4)
+}
+.shadow-step-icon-primary {
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.2)
+}
+.shadow-step-icon-primary-hover:hover {
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.4)
+}
+.shadow-roadmap-line {
+    box-shadow: 0 0 15px rgba(0, 244, 254, 0.3)
+}
+.shadow-roadmap-dot-secondary {
+    box-shadow: 0 0 10px #00f4fe
+}
+.shadow-roadmap-dot-primary {
+    box-shadow: 0 0 10px #ca98ff
+}
+.shadow-team-title {
+    filter: drop-shadow(0 0 15px rgba(138, 43, 226, 0.5))
+}
+.shadow-card-hover:hover {
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.15)
+}
+.shadow-card-secondary-hover:hover {
+    box-shadow: 0 0 30px rgba(0, 244, 254, 0.15)
+}
+.shadow-img-member {
+    box-shadow: inset 0 0 20px rgba(138, 43, 226, 0.5)
+}
+.shadow-img-member-secondary {
+    box-shadow: inset 0 0 20px rgba(0, 244, 254, 0.5)
+}
+
+/* Blur effects */
+.blur-glow-3xl {
+    filter: blur(3rem)
+}
+.blur-glow-2xl {
+    filter: blur(2rem)
+}
+.blur-glow-100 {
+    filter: blur(100px)
+}
+.blur-glow-120 {
+    filter: blur(120px)
+}
+
+/* Gradients */
+.gradient-text-primary {
+    background: linear-gradient(to right, #ca98ff, #9c42f4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+.gradient-text-secondary {
+    background: linear-gradient(to right, #00f4fe, #c185ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+.gradient-btn-primary {
+    background: linear-gradient(to right, #ca98ff, #9c42f4)
+}
+.gradient-btn-primary-hover:hover {
+    backdrop-filter: brightness(1.25)
+}
+
+/* Scale transforms */
+.scale-btn {
+    transform: scale(0.95)
+}
+.scale-btn-active:active {
+    transform: scale(0.9)
+}
+.scale-btn-hover:hover {
+    transform: scale(1.05)
+}
+.scale-img-hover:hover {
+    transform: scale(1.1)
+}
+
+/* Translate transforms */
+.translate-center {
+    transform: translate(-50%, -50%)
+}
+
+/* Z-index and positioning */
+.z-back-10 {
+    z-index: -10
+}
+.z-back-9 {
+    z-index: -9
+}
+
+/* Border colors */
+.border-primary-20 {
+    border-color: rgba(138, 43, 226, 0.2)
+}
+.border-primary-30 {
+    border-color: rgba(138, 43, 226, 0.3)
+}
+.border-primary-40 {
+    border-color: rgba(138, 43, 226, 0.4)
+}
+.border-primary-60 {
+    border-color: rgba(138, 43, 226, 0.6)
+}
+.border-secondary-20 {
+    border-color: rgba(0, 244, 254, 0.2)
+}
+.border-secondary-30 {
+    border-color: rgba(0, 244, 254, 0.3)
+}
+.border-secondary-40 {
+    border-color: rgba(0, 244, 254, 0.4)
+}
+.border-secondary-60 {
+    border-color: rgba(0, 244, 254, 0.6)
+}
+.border-outline-15 {
+    border-color: rgba(72, 71, 77, 0.15)
+}
+
+/* Background colors */
+.bg-primary-5 {
+    background-color: rgba(138, 43, 226, 0.05)
+}
+.bg-primary-10 {
+    background-color: rgba(138, 43, 226, 0.1)
+}
+.bg-primary-20 {
+    background-color: rgba(138, 43, 226, 0.2)
+}
+.bg-secondary-5 {
+    background-color: rgba(0, 244, 254, 0.05)
+}
+.bg-secondary-10 {
+    background-color: rgba(0, 244, 254, 0.1)
+}
+.bg-secondary-20 {
+    background-color: rgba(0, 244, 254, 0.2)
+}
+
+/* Hover states */
+.bg-primary-10-hover:hover {
+    background-color: rgba(138, 43, 226, 0.1)
+}
+.bg-secondary-10-hover:hover {
+    background-color: rgba(0, 244, 254, 0.1)
+}
+.border-primary-hover:hover {
+    border-color: #ca98ff
+}
+.border-secondary-hover:hover {
+    border-color: #00f4fe
+}
+
+/* Transition utilities */
+.transition-shadow {
+    transition: box-shadow 0.3s ease
+}
+.transition-transform {
+    transform: transition
+}
+.transition-all-500 {
+    transition: all 0.5s ease
+}
+.transition-opacity {
+    transition: opacity 0.3s ease
+}
+
+/* Duration utilities */
+.duration-300 {
+    transition-duration: 0.3s
+}
+.duration-500 {
+    transition-duration: 0.5s
+}
+.duration-700 {
+    transition-duration: 0.7s
+}
+
+/* Opacity utilities */
+.opacity-30 {
+    opacity: 0.3
+}
+.opacity-60 {
+    opacity: 0.6
+}
+.opacity-80 {
+    opacity: 0.8
+}
+
+/* Font families */
+.font-manrope {
+    font-family: 'Manrope', sans-serif
+}
+
+/* Grayscale */
+.grayscale {
+    filter: grayscale(1)
+}
+.opacity-60-grayscale {
+    opacity: 0.6;
+    filter: grayscale(1)
+}
+.opacity-100-grayscale-0:hover {
+    opacity: 1;
+    filter: grayscale(0)
+}
+
+/* Team badge */
+.badge-team {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border-radius: 9999px
+}
+
+/* Border outline variants */
+.border-outline-10 {
+    border-color: rgba(72, 71, 77, 0.1)
+}
+.border-outline-30 {
+    border-color: rgba(72, 71, 77, 0.3)
+}
+.border-secondary-20 {
+    border-color: rgba(0, 244, 254, 0.2)
+}
+
+/* Background variants */
+.bg-surface-variant-40 {
+    background-color: rgba(37, 37, 45, 0.4)
+}
+.bg-surface-variant-20 {
+    background-color: rgba(37, 37, 45, 0.2)
+}
+
+/* Opacity variants */
+.text-on-surface-80 {
+    color: rgba(249, 245, 253, 0.8)
+}
+.text-primary-60 {
+    color: rgba(138, 43, 226, 0.6)
+}
+.text-secondary-60 {
+    color: rgba(0, 244, 254, 0.6)
+}
+
+/* Text opacity */
+.text-on-surface-variant {
+    color: #acaab1
+}
+
+/* Tracking */
+.tracking-widest-custom {
+    letter-spacing: 0.3em
+}
+
+/* Shadow 2xl */
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25)
+}
+
+/* Hover text white */
+.hover-text-white:hover {
+    color: #fff
+}
+
+/* Border primary/secondary hover */
+.hover-border-primary:hover {
+    border-color: #ca98ff
+}
+.hover-border-secondary:hover {
+    border-color: #00f4fe
+}
+
+/* Translate Y negative */
+.translate-y-negative-8:hover {
+    transform: translateY(-8px)
+}
+
+/* Scale hover */
+.scale-hover:hover {
+    transform: scale(1.05)
+}
+
+/* Shadow glow secondary */
+.shadow-glow-secondary {
+    box-shadow: 0 0 10px #00f4fe
+}
+
+/* Badge lead */
+.bg-slate-950-40 {
+    background-color: rgba(2, 6, 23, 0.4)
+}
+.border-slate-800-50 {
+    border-color: rgba(30, 41, 59, 0.5)
+}
+.bg-slate-950-80 {
+    background-color: rgba(2, 6, 23, 0.8)
+}
+.text-slate-400 {
+    color: #94a3b8
+}
+.text-slate-200 {
+    color: #e2e8f0
+}
+.text-white {
+    color: #fff
+}
+.text-slate-950 {
+    color: #020617
+}
+.border-outline-20 {
+    border-color: rgba(72, 71, 77, 0.2)
+}
+.bg-surface-variant {
+    background-color: #25252d
+}
+.bg-secondary-20-hover:hover {
+    background-color: rgba(0, 244, 254, 0.2)
+}
+.text-secondary-hover:hover {
+    color: #00f4fe
+}

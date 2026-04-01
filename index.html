@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "inverse-surface": "#fcf8ff",
+            "on-surface-variant": "#acaab1",
+            "error-dim": "#d73357",
+            "error": "#ff6e84",
+            "on-secondary-fixed-variant": "#006266",
+            "on-error-container": "#ffb2b9",
+            "error-container": "#a70138",
+            "secondary-fixed": "#00f4fe",
+            "on-tertiary-fixed": "#3a4a00",
+            "on-primary": "#46007d",
+            "surface-dim": "#0e0e13",
+            "surface-container-low": "#131319",
+            "primary-container": "#c185ff",
+            "surface-variant": "#25252d",
+            "on-primary-fixed-variant": "#420078",
+            "surface-container-highest": "#25252d",
+            "on-tertiary": "#516700",
+            "tertiary-container": "#cafd00",
+            "on-error": "#490013",
+            "on-tertiary-container": "#4a5e00",
+            "secondary-container": "#00696e",
+            "surface-bright": "#2c2b33",
+            "tertiary-fixed-dim": "#beee00",
+            "on-background": "#f9f5fd",
+            "surface-container-lowest": "#000000",
+            "surface": "#0e0e13",
+            "on-surface": "#f9f5fd",
+            "tertiary-fixed": "#cafd00",
+            "primary-fixed": "#c185ff",
+            "tertiary-dim": "#beee00",
+            "surface-container": "#19191f",
+            "secondary": "#00f4fe",
+            "surface-tint": "#ca98ff",
+            "primary-fixed-dim": "#b772ff",
+            "outline": "#76747b",
+            "on-tertiary-fixed-variant": "#526900",
+            "primary-dim": "#9c42f4",
+            "on-secondary": "#00575b",
+            "on-primary-fixed": "#000000",
+            "secondary-fixed-dim": "#00e5ee",
+            "outline-variant": "#48474d",
+            "inverse-on-surface": "#55545b",
+            "background": "#0e0e13",
+            "on-secondary-container": "#dffdff",
+            "primary": "#ca98ff",
+            "surface-container-high": "#1f1f26",
+            "tertiary": "#f3ffca",
+            "inverse-primary": "#8523dd",
+            "on-secondary-fixed": "#004346",
+            "secondary-dim": "#00e5ee",
+            "on-primary-container": "#350062"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Manrope"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-surface-lowest">
+  <div class="fixed-bg"></div>
+  <div class="bg-overlay"></div>
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-slate-950-40 backdrop-blur-xl shadow-nav">
+    <div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+      <a href="#" class="text-2xl font-bold gradient-text-primary font-headline tracking-tight">
+        DesafioPay
+      </a>
+      <div class="hidden md:flex items-center gap-8 font-label text-sm">
+        <a class="text-slate-400 hover:text-white transition-colors" href="#mission">Mission</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#overview">Overview</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#solutions">Solutions</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#how-it-works">Como Funciona</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#roadmap">Roadmap</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#stack">Stack</a>
+        <a class="text-slate-400 hover:text-white transition-colors" href="#team">Team</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="material-symbols-outlined text-slate-400 hover:text-secondary transition-colors"
+          data-icon="account_balance_wallet">account_balance_wallet</button>
+        <button
+          class="gradient-btn-primary text-on-primary-fixed font-headline font-bold px-6 py-2 rounded-md scale-btn active:scale-btn-active transition-all gradient-btn-primary-hover">
+          Launch App
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex flex-col items-center justify-center pt-20 px-6 hero-gradient overflow-hidden"
+      id="mission">
+      <div class="max-w-5xl w-full text-center z-10 space-y-8">
+        <div class="inline-block px-4 py-1.5 glass-card border border-outline-15 rounded-full mb-4">
+          <span class="text-secondary font-label text-xs tracking-widest uppercase">Tech Innovation Hub • Senac Chapada
+            • Manaus-AM</span>
+        </div>
+        <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-none">
+          Pare de apenas observar a Web3. Comece a conquistá-la. <br />
+        </h1>
+        <p class="text-on-surface text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+          O DesafioPay redesenha a fronteira da gestão de tarefas. Transformamos onboarding em entretenimento. Comunidade em progresso. E curiosidade em valor. Somos a Arena definitiva para quem busca dominar o futuro descentralizado.
+        </p>
+        <!-- Team Banner in Hero -->
+        <div class="pt-12">
+          <p class="font-label text-xs text-on-surface mb-4 tracking-[0.3em] uppercase">Core Developers</p>
+          <div
+            class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-on-surface font-headline font-medium text-sm">
+            <span>Diogo Rodrigo</span>
+            <span>Cilândia Guimarães</span>
+            <span>Andreza Hayden</span>
+            <span>Lucas Olimpio</span>
+            <span>Marcos Vieira</span>
+            <span>Diego dos Santos</span>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+          <button
+            class="gradient-btn-primary px-8 py-4 rounded-md font-headline font-bold text-lg shadow-lg neon-glow-primary hover:scale-btn-hover transition-all">
+            Iniciar Missão
+          </button>
+          <a class="glass-card border border-outline-30 px-8 py-4 rounded-md font-headline font-bold text-lg hover:bg-surface-variant-40 transition-all inline-flex items-center justify-center"
+            href="#roadmap">
+            Ver Roadmap
+          </a>
+        </div>
+      </div>
+      <!-- Floating 3D Coin Asset Mockup -->
+      <div class="absolute bottom-10 right-10 w-48 h-48 md:w-64 md:h-64 opacity-80 hidden lg:block">
+        <img alt="3D DSP Token" class="w-full h-full object-contain animate-pulse"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIjT8ldzlA1dtwVWGaBr3l9hFz46aQFWUSJJI4YhPF6ZCrUpxJIxK3LcfHjqvc_e0zB2hjgfhgaThHqVq-_GEadpffUnFeNxb1m6WsujY44tm68vDRFWctWgHpWEHZivMixcCbNY5xFW96-WLSCeLlXQW49a1ciYMy5bMdhY7rj9oGXi5twFy2PSJ62RQuvrLkkUVOQmgCoG4cIltvYVZVzQfGLb6Q_d6ZXpotPHhnF8HGj0FKhm56-FasMRmMOF5ZNYi_GxELrew" />
+      </div>
+    </section>
+    <!-- O Projeto Section -->
+    <section class="py-24 px-6" id="overview">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-6 glass-card p-8 md:p-12 rounded-3xl border border-outline-10">
+            <div class="text-secondary font-label font-bold text-sm tracking-widest">O PROJETO</div>
+            <h2 class="font-headline text-4xl md:text-5xl font-bold leading-tight">A arena onde a Web3 <span
+                class="text-primary">ganha vida.</span></h2>
+            <p class="text-on-surface-variant text-lg leading-relaxed">
+              O DesafioPay redefine a experiência de usuários através de um ecossistema mobile-first onde a complexidade
+              da blockchain é substituída pela dopamina das conquistas. Cada tarefa concluída é validada em rede e
+              recompensada, unindo utilidade real a um modelo econômico sustentável.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <span class="material-symbols-outlined filled text-secondary" data-icon="token">token</span>
+                <div>
+                  <h4 class="font-bold text-on-surface">Tokens DSP</h4>
+                  <p class="text-on-surface-variant text-sm">Moeda nativa para recompensas e governança dentro do
+                    ecossistema.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="material-symbols-outlined filled text-secondary" data-icon="smartphone">smartphone</span>
+                <div>
+                  <h4 class="font-bold text-on-surface">Mobile First</h4>
+                  <p class="text-on-surface-variant text-sm">Interface otimizada para ações rápidas e acompanhamento em
+                    tempo real.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="relative">
+            <div class="aspect-video glass-card border border-outline-15 rounded-xl overflow-hidden shadow-2xl">
+              <img alt="DesafioPay Dashboard Preview" class="w-full h-full object-cover"
+                src="C:\Users\Cilandia Guimaraes\Desktop\landing_page\desafiopay_landing_page_custom_background_applied\fotos\Terminal de ativos digitais DesafioPay.png" />
+            </div>
+            <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary-20 blur-glow-3xl rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Objetivo Section (Bento Grid) -->
+    <section class="py-24 px-6" id="solutions">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="font-headline text-4xl font-bold">4 Pilares de Impacto</h2>
+          <p class="text-on-surface max-w-xl mx-auto">Web3 não tem problema de tecnologia — tem problema de
+            engajamento. O DesafioPay é a solução.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="md:col-span-2 p-8 glass-card border border-outline-10 rounded-xl space-y-4">
+            <span class="material-symbols-outlined text-tertiary text-4xl" data-icon="bolt">bolt</span>
+            <h3 class="font-headline text-2xl font-bold">1. Resolver o Engajamento</h3>
+            <p class="text-on-surface-variant">Transformamos a passividade em missões ativas. Ativamos gatilhos de
+              recompensa cerebral para garantir retenção e foco total do usuário no ecossistema.</p>
+          </div>
+          <div class="p-8 glass-card border border-secondary-20 rounded-xl space-y-4">
+            <span class="material-symbols-outlined text-secondary text-4xl" data-icon="security">security</span>
+            <h3 class="font-headline text-2xl font-bold">2. Transparência Imutável</h3>
+            <p class="text-on-surface-variant">Segurança que gera confiança. Toda missão e recompensa é registrada em
+              blockchain, garantindo integridade absoluta dos dados e dos ativos.</p>
+          </div>
+          <div class="p-8 glass-card border border-outline-15 rounded-xl space-y-4">
+            <span class="material-symbols-outlined text-tertiary text-4xl" data-icon="account_tree">account_tree</span>
+            <h3 class="font-headline text-2xl font-bold">3. Escalabilidade de Elite</h3>
+            <p class="text-on-surface-variant">Arquitetura desenhada para o crescimento exponencial. Pronto para
+              processar milhões de transações simultâneas sem perda de performance.</p>
+          </div>
+          <div class="md:col-span-2 p-8 glass-card border border-outline-10 rounded-xl flex items-center gap-8">
+            <div class="hidden sm:block">
+              <span class="material-symbols-outlined text-primary text-6xl"
+                data-icon="deployed_code">deployed_code</span>
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-headline text-2xl font-bold">Incentivos Digitais</h3>
+              <p class="text-on-surface-variant">Modelos econômicos sustentáveis onde o valor do token DSP cresce
+                conforme a rede se expande.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Como Funciona Section -->
+    <section class="py-24 px-6 overflow-hidden" id="how-it-works">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-white shadow-hero-title">
+            Como a <span class="text-secondary">Arena Funciona</span>
+          </h2>
+          <p class="text-on-surface max-w-2xl mx-auto font-light">Siga os passos e transforme seu potencial em
+            ativos digitais reais.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Step 1 -->
+          <div
+            class="group glass-card p-8 rounded-2xl border border-outline-15 hover:border-secondary-40 transition-all duration-500 hover:translate-y-[-8px] relative">
+            <div
+              class="absolute -top-4 -right-4 w-24 h-24 bg-secondary-5 blur-glow-2xl rounded-full group-hover:bg-secondary-10-hover transition-all">
+            </div>
+            <div
+              class="w-16 h-16 mb-6 rounded-xl bg-secondary-10 border border-secondary-30 flex items-center justify-center shadow-step-icon group-hover:shadow-step-icon-hover transition-all">
+              <span class="material-symbols-outlined text-4xl text-secondary"
+                data-icon="person_outline">person_outline</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold text-white mb-3">1. Forje sua Identidade</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Gere sua carteira Web3 única em segundos e entre
+              oficialmente no ecossistema.</p>
+          </div>
+          <!-- Step 2 -->
+          <div
+            class="group glass-card p-8 rounded-2xl border border-outline-15 hover:border-primary-40 transition-all duration-500 hover:translate-y-[-8px] relative">
+            <div
+              class="absolute -top-4 -right-4 w-24 h-24 bg-primary-5 blur-glow-2xl rounded-full group-hover:bg-primary-10-hover transition-all">
+            </div>
+            <div
+              class="w-16 h-16 mb-6 rounded-xl bg-primary-10 border border-primary-30 flex items-center justify-center shadow-step-icon-primary group-hover:shadow-step-icon-primary-hover transition-all">
+              <span class="material-symbols-outlined text-4xl text-primary" data-icon="rocket">rocket</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold text-white mb-3">2. Aceite o Desafio</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Escolha missões diárias ou jornadas épicas para
+              testar suas habilidades e subir de nível.</p>
+          </div>
+          <!-- Step 3 -->
+          <div
+            class="group glass-card p-8 rounded-2xl border border-outline-15 hover:border-secondary-40 transition-all duration-500 hover:translate-y-[-8px] relative">
+            <div
+              class="absolute -top-4 -right-4 w-24 h-24 bg-secondary-5 blur-glow-2xl rounded-full group-hover:bg-secondary-10-hover transition-all">
+            </div>
+            <div
+              class="w-16 h-16 mb-6 rounded-xl bg-secondary-10 border border-secondary-30 flex items-center justify-center shadow-step-icon group-hover:shadow-step-icon-hover transition-all">
+              <span class="material-symbols-outlined text-4xl text-secondary"
+                data-icon="verified_user">verified_user</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold text-white mb-3">3. Conquiste a Blockchain</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Complete tarefas reais com validação on-chain
+              imediata. Sua evolução é pública e imutável.</p>
+          </div>
+          <!-- Step 4 -->
+          <div
+            class="group glass-card p-8 rounded-2xl border border-outline-15 hover:border-primary-40 transition-all duration-500 hover:translate-y-[-8px] relative">
+            <div
+              class="absolute -top-4 -right-4 w-24 h-24 bg-primary-5 blur-glow-2xl rounded-full group-hover:bg-primary-10-hover transition-all">
+            </div>
+            <div
+              class="w-16 h-16 mb-6 rounded-xl bg-primary-10 border border-primary-30 flex items-center justify-center shadow-step-icon-primary group-hover:shadow-step-icon-primary-hover transition-all">
+              <span class="material-symbols-outlined text-4xl text-primary" data-icon="trophy">trophy</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold text-white mb-3">4. Reivindique seu Tesouro</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Ganhe XP e moedas (off-chain) para progresso na
+              arena, e acumule Tokens DSP (on-chain) diretamente na sua carteira.</p>
+            carteira.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Roadmap Section -->
+    <section class="py-24 px-6 overflow-hidden relative" id="roadmap">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20 space-y-4">
+          <div class="text-secondary font-label font-bold text-sm tracking-widest uppercase">Evolução do Ecossistema
+          </div>
+          <h2 class="font-headline text-4xl md:text-5xl font-bold text-white">Project Roadmap</h2>
+          <p class="text-on-surface max-w-xl mx-auto">Um roadmap focado em execução agressiva. O DesafioPay já
+            superou a fase de ideias.</p>
+        </div>
+        <div class="relative">
+          <!-- Roadmap Line Desktop -->
+          <div
+            class="absolute left-1/2 top-0 bottom-0 w-0.5 roadmap-line hidden md:block opacity-30 shadow-roadmap-line">
+          </div>
+        </div>
+        <div class="space-y-12 relative">
+          <!-- Phase 1 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 group">
+            <div class="flex-1 md:text-right">
+              <div
+                class="glass-card p-8 rounded-xl border border-secondary-30 relative hover:border-secondary transition-all duration-300">
+                <div class="flex items-center md:flex-row-reverse gap-4 mb-4">
+                  <div
+                    class="w-12 h-12 rounded-lg bg-secondary-10 border border-secondary-30 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-secondary" data-icon="foundation">foundation</span>
+                  </div>
+                  <div>
+                    <h3 class="font-headline text-2xl font-bold text-white">Phase 1: Foundation</h3>
+                    <span class="text-secondary text-xs font-bold uppercase tracking-widest">(Current)</span>
+                  </div>
+                </div>
+                <p class="text-on-surface-variant">Construção do sistema de missões central, geração dinâmica de wallets
+                  e feed de atividades em tempo real.</p>
+              </div>
+            </div>
+            <div class="w-4 h-4 rounded-full bg-secondary shadow-roadmap-dot-secondary relative z-10 hidden md:block">
+            </div>
+          </div>
+          <div class="flex-1 hidden md:block"></div>
+        </div>
+        <!-- Phase 2 -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 group">
+          <div class="flex-1">
+            <div
+              class="glass-card p-8 rounded-xl border border-primary-20 relative hover:border-primary transition-all duration-300">
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-12 h-12 rounded-lg bg-primary-10 border border-primary-30 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary" data-icon="groups">groups</span>
+                </div>
+                <div>
+                  <h3 class="font-headline text-2xl font-bold text-white">Phase 2: Expansion</h3>
+                  <span class="text-primary-60 text-xs font-bold uppercase tracking-widest">Q3 2024</span>
+                </div>
+              </div>
+              <p class="text-on-surface-variant">Implementação de governança via DAO, tipos avançados de missões
+                inteligentes e otimização para Web PWA.</p>
+            </div>
+          </div>
+          <div class="w-4 h-4 rounded-full bg-primary shadow-roadmap-dot-primary relative z-10 hidden md:block"></div>
+        </div>
+        <div class="flex-1 hidden md:block"></div>
+      </div>
+      <!-- Phase 3 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 group">
+        <div class="flex-1 md:text-right">
+          <div
+            class="glass-card p-8 rounded-xl border border-secondary-20 relative hover:border-secondary transition-all duration-300">
+            <div class="flex items-center md:flex-row-reverse gap-4 mb-4">
+              <div
+                class="w-12 h-12 rounded-lg bg-secondary-10 border border-secondary-30 flex items-center justify-center">
+                <span class="material-symbols-outlined text-secondary" data-icon="hub">hub</span>
+              </div>
+              <div>
+                <h3 class="font-headline text-2xl font-bold text-white">Phase 3: Ecosystem</h3>
+                <span class="text-secondary-60 text-xs font-bold uppercase tracking-widest">Q4 2024</span>
+              </div>
+            </div>
+            <p class="text-on-surface-variant">Expansão da utilidade do token DSP, lançamento do marketplace nativo e
+              integrações cross-chain robustas.</p>
+          </div>
+        </div>
+        <div class="w-4 h-4 rounded-full bg-secondary shadow-roadmap-dot-secondary relative z-10 hidden md:block"></div>
+      </div>
+      <div class="flex-1 hidden md:block"></div>
+      </div>
+      <!-- Phase 4 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 group">
+        <div class="flex-1">
+          <div
+            class="glass-card p-8 rounded-xl border border-primary-20 relative hover:border-primary transition-all duration-300">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-lg bg-primary-10 border border-primary-30 flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary" data-icon="rocket_launch">rocket_launch</span>
+              </div>
+              <div>
+                <h3 class="font-headline text-2xl font-bold text-white">Phase 4: Scaling</h3>
+                <span class="text-primary-60 text-xs font-bold uppercase tracking-widest">2025</span>
+              </div>
+            </div>
+            <p class="text-on-surface-variant">Torneios globais de arena, missões pro-bono lideradas pela comunidade e
+              escala massiva de usuários.</p>
+          </div>
+        </div>
+        <div class="w-4 h-4 rounded-full bg-primary shadow-roadmap-dot-primary relative z-10 hidden md:block"></div>
+      </div>
+      <div class="flex-1 hidden md:block"></div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- Background Decoration for Roadmap -->
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-5 blur-glow-100 -z-10 rounded-full"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-5 blur-glow-100 -z-10 rounded-full"></div>
+    </section>
+    <!-- Tecnologia Section -->
+    <section class="py-24 px-6 overflow-hidden relative" id="stack">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="glass-card inline-block p-12 rounded-3xl border border-outline-10">
+          <div class="text-primary font-label font-bold text-sm tracking-widest mb-4">TECH STACK</div>
+          <h2 class="font-headline text-4xl font-bold mb-16">Infraestrutura de Elite</h2>
+          <div class="flex flex-wrap justify-center gap-12 items-center">
+            <div
+              class="group flex flex-col items-center gap-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-surface-container-high rounded-lg border border-outline-20">
+                <span class="material-symbols-outlined text-3xl" data-icon="terminal">terminal</span>
+              </div>
+              <span class="font-headline font-medium">Python/Flask</span>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-surface-container-high rounded-lg border border-outline-20">
+                <span class="material-symbols-outlined text-3xl" data-icon="database">database</span>
+              </div>
+              <span class="font-headline font-medium">SQLAlchemy</span>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-surface-container-high rounded-lg border border-outline-20">
+                <span class="material-symbols-outlined text-3xl" data-icon="css">css</span>
+              </div>
+              <span class="font-headline font-medium">Tailwind CSS</span>
+            </div>
+            <div
+              class="group flex flex-col items-center gap-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-surface-container-high rounded-lg border border-outline-20">
+                <span class="material-symbols-outlined text-3xl" data-icon="link">link</span>
+              </div>
+              <span class="font-headline font-medium">Web3 Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Atmospheric Glow Background Decor -->
+      <div
+        class="absolute top-1/2 left-1/2 translate-center w-[800px] h-[400px] bg-secondary-5 blur-glow-120 pointer-events-none">
+      </div>
+    </section>
+    <!-- Equipe Section -->
+    <section class="py-24 px-6" id="team">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div class="text-center w-full space-y-4 mb-10">
+            <h2 class="font-headline text-5xl md:text-6xl font-bold tracking-tight text-white shadow-team-title">
+              Equipe de <span class="text-secondary">Operações</span>
+            </h2>
+            <p class="text-on-surface-variant font-medium text-lg">
+              Os arquitetos por trás da arena DesafioPay
+            </p>
+            <div class="inline-block px-4 py-1 bg-primary-10 border border-primary-30 rounded-full">
+              <span class="text-primary font-label text-xs font-bold tracking-widest uppercase">Alunos do Senac Chapada
+                • Manaus/AM</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Profile Card 1 -->
+          <div
+            class="group glass-card rounded-2xl overflow-hidden border border-primary-20 hover:border-primary-60 transition-all duration-500 hover:shadow-card-hover">
+            <div class="p-6 space-y-6">
+              <div
+                class="relative aspect-square rounded-xl overflow-hidden border-2 border-primary-30 group-hover:border-primary transition-colors">
+                <div class="absolute top-2 right-2">
+                  <span
+                    class="text-[10px] bg-secondary text-surface-lowest px-2 py-0.5 rounded font-bold uppercase tracking-wider shadow-lg">Lead</span>
+                </div><img alt="Diogo Rodrigo"
+                  class="w-full h-full object-cover group-hover:scale-img-hover transition-transform duration-700 shadow-img-member"
+                  src="fotos/foto_Diogo.jpeg" />
+
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <h3 class="font-headline text-2xl font-bold text-white">Diogo Rodrigo</h3>
+                  <p class="text-secondary font-medium text-sm">Fullstack Developer &amp; Architect</p>
+                </div>
+                <div class="flex gap-3">
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">code</span></a>
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">link</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Profile Card 2 -->
+          <div
+            class="group glass-card rounded-2xl overflow-hidden border border-secondary-20 hover:border-secondary-60 transition-all duration-500 hover:shadow-card-secondary-hover">
+            <div class="p-6 space-y-6">
+              <div
+                class="relative aspect-square rounded-xl overflow-hidden border-2 border-secondary-30 group-hover:border-secondary transition-colors">
+                <img alt="Cilândia Guimarães"
+                  class="w-full h-full object-cover group-hover:scale-img-hover transition-transform duration-700 shadow-img-member-secondary"
+                  src="C:\Users\Cilandia Guimaraes\Desktop\landing_page\desafiopay_landing_page_custom_background_applied\fotos\foto_Cilandia.jpeg" />
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <h3 class="font-headline text-2xl font-bold text-white">Cilândia Guimarães</h3>
+                  <p class="text-primary font-medium text-sm">UI/UX Designer &amp; Frontend</p>
+                </div>
+                <div class="flex gap-3">
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">palette</span></a>
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">link</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Profile Card 3 -->
+          <div
+            class="group glass-card rounded-2xl overflow-hidden border border-primary-20 hover:border-primary-60 transition-all duration-500 hover:shadow-card-hover">
+            <div class="p-6 space-y-6">
+              <div
+                class="relative aspect-square rounded-xl overflow-hidden border-2 border-primary-30 group-hover:border-primary transition-colors">
+                <img alt="Andreza Hayden"
+                  class="w-full h-full object-cover group-hover:scale-img-hover transition-transform duration-700 shadow-img-member"
+                  src="C:\Users\Cilandia Guimaraes\Desktop\landing_page\desafiopay_landing_page_custom_background_applied\fotos\AndrezaHayden.jpeg" />
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <h3 class="font-headline text-2xl font-bold text-white">Andreza Hayden</h3>
+                  <p class="text-secondary font-medium text-sm">Blockchain Specialist</p>
+                </div>
+                <div class="flex gap-3">
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">token</span></a>
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">link</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Profile Card 4 -->
+          <div
+            class="group glass-card rounded-2xl overflow-hidden border border-secondary-20 hover:border-secondary-60 transition-all duration-500 hover:shadow-card-secondary-hover">
+            <div class="p-6 space-y-6">
+              <div
+                class="relative aspect-square rounded-xl overflow-hidden border-2 border-secondary-30 group-hover:border-secondary transition-colors">
+                <img alt="Lucas Olimpio"
+                  class="w-full h-full object-cover group-hover:scale-img-hover transition-transform duration-700 shadow-img-member-secondary"
+                  src="C:\Users\Cilandia Guimaraes\Desktop\landing_page\desafiopay_landing_page_custom_background_applied\fotos\lucas.jpeg" />
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <h3 class="font-headline text-2xl font-bold text-white">Lucas Olimpio</h3>
+                  <p class="text-primary font-medium text-sm">Backend Developer</p>
+                </div>
+                <div class="flex gap-3">
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">database</span></a>
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">link</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Profile Card 5 -->
+          <div
+            class="group glass-card rounded-2xl overflow-hidden border border-primary-20 hover:border-primary-60 transition-all duration-500 hover:shadow-card-hover">
+            <div class="p-6 space-y-6">
+              <div
+                class="relative aspect-square rounded-xl overflow-hidden border-2 border-primary-30 group-hover:border-primary transition-colors">
+                <img alt="Marcos Vieira"
+                  class="w-full h-full object-cover group-hover:scale-img-hover transition-transform duration-700 shadow-img-member"
+                  src="C:\Users\Cilandia Guimaraes\Desktop\landing_page\desafiopay_landing_page_custom_background_applied\fotos\vieira.jpeg" />
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <h3 class="font-headline text-2xl font-bold text-white">Marcos Vieira</h3>
+                  <p class="text-secondary font-medium text-sm">Data Analyst</p>
+                </div>
+                <div class="flex gap-3">
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">insights</span></a>
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">link</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Profile Card 6 -->
+          <div
+            class="group glass-card rounded-2xl overflow-hidden border border-secondary-20 hover:border-secondary-60 transition-all duration-500 hover:shadow-card-secondary-hover">
+            <div class="p-6 space-y-6">
+              <div
+                class="relative aspect-square rounded-xl overflow-hidden border-2 border-secondary-30 group-hover:border-secondary transition-colors">
+                <img alt="Diego dos Santos"
+                  class="w-full h-full object-cover group-hover:scale-img-hover transition-transform duration-700 shadow-img-member-secondary"
+                  src="C:\Users\Cilandia Guimaraes\Desktop\landing_page\desafiopay_landing_page_custom_background_applied\fotos\Diego.jpeg" />
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <h3 class="font-headline text-2xl font-bold text-white">Diego dos Santos</h3>
+                  <p class="text-primary font-medium text-sm">DevOps Engineer</p>
+                </div>
+                <div class="flex gap-3">
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">settings_input_component</span></a>
+                  <a class="text-on-surface-variant hover:text-white transition-colors" href="#"><span
+                      class="material-symbols-outlined text-lg">link</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="w-full border-slate-800-50 bg-slate-950-80 backdrop-blur-md font-manrope text-sm text-slate-400 relative z-10">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto gap-6">
+      <div class="space-y-2">
+        <div class="text-lg font-bold text-slate-200">DesafioPay</div>
+        <p class="opacity-80">© 2024 DesafioPay Neon Arena. All rights reserved.</p>
+        <p class="text-[10px] text-primary-60 tracking-widest uppercase">Project by Senac Chapada (Manaus-AM)</p>
+        <p class="text-sm text-secondary font-medium mt-2">DesafioPay: jogue, aprenda e conquiste seu espaço no futuro da Web3.</p>
+      </div>
+      <div class="flex gap-8">
+        <a class="hover:text-purple-400 transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+        <a class="hover:text-purple-400 transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+        <a class="hover:text-purple-400 transition-colors opacity-80 hover:opacity-100" href="#">Docs</a>
+      </div>
+      <div class="flex gap-4">
+        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-variant hover:bg-secondary-20-hover hover:text-secondary-hover transition-all"
+          href="#">
+          <span class="material-symbols-outlined text-sm" data-icon="code">code</span>
+        </a>
+        <a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-variant hover:bg-secondary-20-hover hover:text-secondary-hover transition-all"
+          href="#">
+          <span class="material-symbols-outlined text-sm" data-icon="forum">forum</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
