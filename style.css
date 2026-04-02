@@ -5,7 +5,7 @@
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24
 }
 .glass-card {
-    background: rgba(14, 14, 19, 0.6);
+    background: rgba(14, 14, 19, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px)
 }
@@ -463,3 +463,5 @@ section {
     color: #0E0E13;
     border: none;
 }
+
+.glass-card { background: rgba(14, 14, 19, 0.85) !important; }
