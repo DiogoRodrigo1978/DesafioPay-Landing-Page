@@ -10,7 +10,7 @@
     -webkit-backdrop-filter: blur(16px)
 }
 .neon-glow-primary {
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.2)
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.2)
 }
 .neon-glow-secondary {
     box-shadow: 0 0 20px rgba(0, 244, 254, 0.2)
@@ -19,7 +19,7 @@
     background: radial-gradient(circle at 50% 50%, rgba(156, 66, 244, 0.15) 0%, transparent 70%)
 }
 .roadmap-line {
-    background: linear-gradient(180deg, #00f4fe 0%, #ca98ff 50%, #00f4fe 100%)
+    background: linear-gradient(180deg, #00f4fe 0%, #93C5FD 50%, #00f4fe 100%)
 }
 .fixed-bg {
     position: fixed;
@@ -49,7 +49,7 @@ section {
 
 /* Shadows */
 .shadow-nav {
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.15)
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.15)
 }
 .shadow-hero-title {
     filter: drop-shadow(0 0 10px rgba(0, 244, 254, 0.4))
@@ -61,10 +61,10 @@ section {
     box-shadow: 0 0 25px rgba(0, 244, 254, 0.4)
 }
 .shadow-step-icon-primary {
-    box-shadow: 0 0 15px rgba(138, 43, 226, 0.2)
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2)
 }
 .shadow-step-icon-primary-hover:hover {
-    box-shadow: 0 0 25px rgba(138, 43, 226, 0.4)
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.4)
 }
 .shadow-roadmap-line {
     box-shadow: 0 0 15px rgba(0, 244, 254, 0.3)
@@ -73,19 +73,19 @@ section {
     box-shadow: 0 0 10px #00f4fe
 }
 .shadow-roadmap-dot-primary {
-    box-shadow: 0 0 10px #ca98ff
+    box-shadow: 0 0 10px #93C5FD
 }
 .shadow-team-title {
-    filter: drop-shadow(0 0 15px rgba(138, 43, 226, 0.5))
+    filter: drop-shadow(0 0 15px rgba(37, 99, 235, 0.5))
 }
 .shadow-card-hover:hover {
-    box-shadow: 0 0 30px rgba(138, 43, 226, 0.15)
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.15)
 }
 .shadow-card-secondary-hover:hover {
     box-shadow: 0 0 30px rgba(0, 244, 254, 0.15)
 }
 .shadow-img-member {
-    box-shadow: inset 0 0 20px rgba(138, 43, 226, 0.5)
+    box-shadow: inset 0 0 20px rgba(37, 99, 235, 0.5)
 }
 .shadow-img-member-secondary {
     box-shadow: inset 0 0 20px rgba(0, 244, 254, 0.5)
@@ -107,19 +107,19 @@ section {
 
 /* Gradients */
 .gradient-text-primary {
-    background: linear-gradient(to right, #ca98ff, #9c42f4);
+    background: linear-gradient(to right, #93C5FD, #3B82F6);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent
 }
 .gradient-text-secondary {
-    background: linear-gradient(to right, #00f4fe, #c185ff);
+    background: linear-gradient(to right, #00f4fe, #60A5FA);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent
 }
 .gradient-btn-primary {
-    background: linear-gradient(to right, #ca98ff, #9c42f4)
+    background: linear-gradient(to right, #93C5FD, #3B82F6)
 }
 .gradient-btn-primary-hover:hover {
     backdrop-filter: brightness(1.25)
@@ -154,16 +154,16 @@ section {
 
 /* Border colors */
 .border-primary-20 {
-    border-color: rgba(138, 43, 226, 0.2)
+    border-color: rgba(37, 99, 235, 0.2)
 }
 .border-primary-30 {
-    border-color: rgba(138, 43, 226, 0.3)
+    border-color: rgba(37, 99, 235, 0.3)
 }
 .border-primary-40 {
-    border-color: rgba(138, 43, 226, 0.4)
+    border-color: rgba(37, 99, 235, 0.4)
 }
 .border-primary-60 {
-    border-color: rgba(138, 43, 226, 0.6)
+    border-color: rgba(37, 99, 235, 0.6)
 }
 .border-secondary-20 {
     border-color: rgba(0, 244, 254, 0.2)
@@ -183,13 +183,13 @@ section {
 
 /* Background colors */
 .bg-primary-5 {
-    background-color: rgba(138, 43, 226, 0.05)
+    background-color: rgba(37, 99, 235, 0.05)
 }
 .bg-primary-10 {
-    background-color: rgba(138, 43, 226, 0.1)
+    background-color: rgba(37, 99, 235, 0.1)
 }
 .bg-primary-20 {
-    background-color: rgba(138, 43, 226, 0.2)
+    background-color: rgba(37, 99, 235, 0.2)
 }
 .bg-secondary-5 {
     background-color: rgba(0, 244, 254, 0.05)
@@ -203,13 +203,13 @@ section {
 
 /* Hover states */
 .bg-primary-10-hover:hover {
-    background-color: rgba(138, 43, 226, 0.1)
+    background-color: rgba(37, 99, 235, 0.1)
 }
 .bg-secondary-10-hover:hover {
     background-color: rgba(0, 244, 254, 0.1)
 }
 .border-primary-hover:hover {
-    border-color: #ca98ff
+    border-color: #93C5FD
 }
 .border-secondary-hover:hover {
     border-color: #00f4fe
@@ -303,7 +303,7 @@ section {
     color: rgba(249, 245, 253, 0.8)
 }
 .text-primary-60 {
-    color: rgba(138, 43, 226, 0.6)
+    color: rgba(37, 99, 235, 0.6)
 }
 .text-secondary-60 {
     color: rgba(0, 244, 254, 0.6)
@@ -331,7 +331,7 @@ section {
 
 /* Border primary/secondary hover */
 .hover-border-primary:hover {
-    border-color: #ca98ff
+    border-color: #93C5FD
 }
 .hover-border-secondary:hover {
     border-color: #00f4fe
